@@ -1,0 +1,149 @@
+/** styles rules for sectionOne**/
+
+.sectionOne__left--text{
+    font-size:14px ;
+    font-family: "Work Sans", sans-serif;
+    color:  rgba(255, 255, 255, 0.75);
+}
+
+.sectionOne__left--btn{
+    align-self: start;
+}
+
+/** styles rules for sectionTwo**/
+
+.sectionTwo{
+    padding: 40px 0;
+    display: grid;
+    gap: 30px;
+}
+.sectionTwo__content--text{
+      font-family: "Work Sans", sans-serif;
+      font-size: 20px;
+   
+}
+.sectionTwo__logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sectionTwo__logo img{
+    justify-self: center;
+    align-self: center;
+}
+
+.sectionTwo__btn {
+    justify-self: center;
+}
+
+/** styles rules for sectionThree**/
+
+.sectionThree__right--text{
+    color:  rgba(33, 37, 41, 0.5);
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+
+}
+
+.sectionThree__right--btn{
+    align-self: start;
+    margin-top: 20px;
+}
+
+/** styles rules for sectionFour**/
+
+
+.sectionFour__left--text{
+    
+    color:  rgba(33, 37, 41, 0.5);
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+}
+
+.sectionFour__left--btn {
+    align-self: start;
+    margin-top: 20px;
+}
+
+
+/** styles rules for sectionFive**/
+
+.sectionFive{
+    display: grid;
+    gap: 30px;
+    margin-top:15px ;
+    margin-bottom: 30px;
+}
+
+.sectionFive__cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.sectionFive__content--text{
+    font-family:"Work Sans", sans-serif ;
+    font-size: 20px;
+}
+
+[class ^="sectionFive__cards"]{
+   box-shadow: var(--shadow-1);
+   padding: 20px 25px;
+   border-radius: 5px ;
+   display:grid;
+   gap:15px;
+   
+   
+}
+
+[class ^="sectionFive__cards"] .name{
+    font-family: "Crimson Text", serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+[class ^="sectionFive__cards"] .position{
+    font-family:"Work Sans", sans-serif ;
+    color: rgba(33, 37, 41, 0.75);
+    text-transform: uppercase;
+}
+
+.sectionFive__btn {
+    justify-self: center;
+}
+
+@media (max-width: 1200px){
+    .sectionTwo__logo{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 786px){
+    .sectionOne__left{
+      order: 1;
+    }
+    .sectionOne__right{
+        order: 0;
+    }
+    .sectionFour__left{
+       order: 1;
+    }
+    .sectionFour__right{
+        order: 0;
+    }
+    .sectionFive__cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px){
+    .sectionFive__cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sectionTwo__logo{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+}
+
